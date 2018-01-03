@@ -9,7 +9,7 @@
 import UIKit
 
 // MARK: - HoneycombPhoto
-public class HoneycombPhoto:NSObject {
+open class HoneycombPhoto:NSObject {
     
     var underlyingImage:UIImage!
     
@@ -23,7 +23,7 @@ public class HoneycombPhoto:NSObject {
     }
     
     // MARK: - class func
-    class func photoWithImage(image: UIImage) -> HoneycombPhoto {
+    class func photoWithImage(_ image: UIImage) -> HoneycombPhoto {
         return HoneycombPhoto(image: image)
     }
 }

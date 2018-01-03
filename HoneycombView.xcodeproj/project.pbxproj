@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		8976D2BB1B5F3CBC0016408F /* HoneycombView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8976D2AF1B5F3CBC0016408F /* HoneycombView.framework */; };
 		8976D2C21B5F3CBC0016408F /* HoneycombViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8976D2C11B5F3CBC0016408F /* HoneycombViewTests.swift */; };
-		899B8B8E1BC3A24C00B8F9C3 /* HoneycombDetectingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B8B881BC3A24C00B8F9C3 /* HoneycombDetectingImageView.swift */; settings = {ASSET_TAGS = (); }; };
-		899B8B8F1BC3A24C00B8F9C3 /* HoneycombDetectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B8B891BC3A24C00B8F9C3 /* HoneycombDetectingView.swift */; settings = {ASSET_TAGS = (); }; };
-		899B8B901BC3A24C00B8F9C3 /* HoneycombPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B8B8A1BC3A24C00B8F9C3 /* HoneycombPhoto.swift */; settings = {ASSET_TAGS = (); }; };
-		899B8B911BC3A24C00B8F9C3 /* HoneycombPhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B8B8B1BC3A24C00B8F9C3 /* HoneycombPhotoBrowser.swift */; settings = {ASSET_TAGS = (); }; };
-		899B8B931BC3A24C00B8F9C3 /* HoneycombZoomingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B8B8D1BC3A24C00B8F9C3 /* HoneycombZoomingScrollView.swift */; settings = {ASSET_TAGS = (); }; };
-		899B8B991BC3A2FF00B8F9C3 /* HoneycombView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B8B981BC3A2FF00B8F9C3 /* HoneycombView.swift */; settings = {ASSET_TAGS = (); }; };
-		899B8BA41BC3A3BC00B8F9C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 899B8BA31BC3A3BC00B8F9C3 /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
-		899B8BA51BC3A3BC00B8F9C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 899B8BA31BC3A3BC00B8F9C3 /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
+		899B8B8E1BC3A24C00B8F9C3 /* HoneycombDetectingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B8B881BC3A24C00B8F9C3 /* HoneycombDetectingImageView.swift */; };
+		899B8B8F1BC3A24C00B8F9C3 /* HoneycombDetectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B8B891BC3A24C00B8F9C3 /* HoneycombDetectingView.swift */; };
+		899B8B901BC3A24C00B8F9C3 /* HoneycombPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B8B8A1BC3A24C00B8F9C3 /* HoneycombPhoto.swift */; };
+		899B8B911BC3A24C00B8F9C3 /* HoneycombPhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B8B8B1BC3A24C00B8F9C3 /* HoneycombPhotoBrowser.swift */; };
+		899B8B931BC3A24C00B8F9C3 /* HoneycombZoomingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B8B8D1BC3A24C00B8F9C3 /* HoneycombZoomingScrollView.swift */; };
+		899B8B991BC3A2FF00B8F9C3 /* HoneycombView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B8B981BC3A2FF00B8F9C3 /* HoneycombView.swift */; };
+		899B8BA41BC3A3BC00B8F9C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 899B8BA31BC3A3BC00B8F9C3 /* Images.xcassets */; };
+		899B8BA51BC3A3BC00B8F9C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 899B8BA31BC3A3BC00B8F9C3 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -199,9 +199,11 @@
 				TargetAttributes = {
 					8976D2AE1B5F3CBC0016408F = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0830;
 					};
 					8976D2B91B5F3CBC0016408F = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -383,6 +385,7 @@
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -404,6 +407,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -421,6 +425,7 @@
 				INFOPLIST_FILE = HoneycombViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -434,6 +439,7 @@
 				INFOPLIST_FILE = HoneycombViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

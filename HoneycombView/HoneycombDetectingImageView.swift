@@ -9,16 +9,16 @@
 import UIKit
 
 @objc protocol HoneycombDetectingImageViewDelegate {
-    func handleImageViewSingleTap(view:UIImageView, touch: UITouch)
-    func handleImageViewDoubleTap(view:UIImageView, touch: UITouch)
+    func handleImageViewSingleTap(_ view:UIImageView, touch: UITouch)
+    func handleImageViewDoubleTap(_ view:UIImageView, touch: UITouch)
 }
 
 class HoneycombDetectingImageView:UIImageView{
     
     weak var delegate:HoneycombDetectingImageViewDelegate?
     
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        super.touchesEnded(touches, withEvent: event)
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
         
         let touch = touches.first!
         switch touch.tapCount {
@@ -26,13 +26,13 @@ class HoneycombDetectingImageView:UIImageView{
         case 2 : handleDoubleTap(touch)
         default: break
         }
-        nextResponder()
+        next
     }
     
-    func handleSingleTap(touch: UITouch) {
+    func handleSingleTap(_ touch: UITouch) {
         delegate?.handleImageViewSingleTap(self, touch: touch)
     }
-    func handleDoubleTap(touch: UITouch) {
+    func handleDoubleTap(_ touch: UITouch) {
         delegate?.handleImageViewDoubleTap(self, touch: touch)
     }
 }
